@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting_App", "Accounting_App\Accounting_App.csproj", "{D19F61C7-E688-4BF0-9640-3D4671DA6D31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting_DataLayer", "Accounting_DataLayer\Accounting_DataLayer.csproj", "{5294F686-7078-4CF3-B92D-E83ABD69DA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting_Business", "Accounting_Business\Accounting_Business.csproj", "{DC4BFA29-04D1-44E6-B889-D0A32C3E9195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting_ViewModels", "Accounting_ViewModels\Accounting_ViewModels.csproj", "{1EDA3B05-DA9D-4B70-B38A-E63D3F7C1AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting_Utilities", "Accounting_Utilities\Accounting_Utilities.csproj", "{AD2503F6-2144-4FBE-A550-F19E0C02BA04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReops", "TestReops\TestReops.csproj", "{5C1ACA7C-6FD7-49B0-B613-BF2A31856D57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D19F61C7-E688-4BF0-9640-3D4671DA6D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19F61C7-E688-4BF0-9640-3D4671DA6D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19F61C7-E688-4BF0-9640-3D4671DA6D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19F61C7-E688-4BF0-9640-3D4671DA6D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5294F686-7078-4CF3-B92D-E83ABD69DA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5294F686-7078-4CF3-B92D-E83ABD69DA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5294F686-7078-4CF3-B92D-E83ABD69DA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5294F686-7078-4CF3-B92D-E83ABD69DA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4BFA29-04D1-44E6-B889-D0A32C3E9195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4BFA29-04D1-44E6-B889-D0A32C3E9195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4BFA29-04D1-44E6-B889-D0A32C3E9195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4BFA29-04D1-44E6-B889-D0A32C3E9195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDA3B05-DA9D-4B70-B38A-E63D3F7C1AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDA3B05-DA9D-4B70-B38A-E63D3F7C1AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDA3B05-DA9D-4B70-B38A-E63D3F7C1AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDA3B05-DA9D-4B70-B38A-E63D3F7C1AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2503F6-2144-4FBE-A550-F19E0C02BA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2503F6-2144-4FBE-A550-F19E0C02BA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2503F6-2144-4FBE-A550-F19E0C02BA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2503F6-2144-4FBE-A550-F19E0C02BA04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1ACA7C-6FD7-49B0-B613-BF2A31856D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1ACA7C-6FD7-49B0-B613-BF2A31856D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1ACA7C-6FD7-49B0-B613-BF2A31856D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1ACA7C-6FD7-49B0-B613-BF2A31856D57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {102BDACE-32D3-466E-A3B8-C1E2F86C11F2}
+	EndGlobalSection
+EndGlobal
