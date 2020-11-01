@@ -4,29 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Accounting_DataLayer
 {
     public class UnitOfWork : IDisposable
     {
-        AccountingEntities db = new AccountingEntities();
+       AccountingEntities context = new AccountingEntities();
 
         private IPeopleRepository _peopleRepository;
 
-        public IPeopleRepository PeopleRepository
-        {
-            get
+        public IPeopleRepository PeopleRepository { get
             {
                 if (_peopleRepository == null)
                 {
-                    _peopleRepository = new PeopleRespository(db);
+                    _peopleRepository = new PeopleRepository(context);
                 }
                 return _peopleRepository;
             }
         }
 
+        public void SaveChanges()
+        {
+            context.SaveChanges();
+        }
+
         public void Dispose()
         {
-            throw new NotImplementedException();
+            context.Dispose();
         }
+
     }
 }

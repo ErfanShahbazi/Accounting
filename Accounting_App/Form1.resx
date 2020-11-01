@@ -117,71 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_001_share" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-share.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripDropDownButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="_001_users" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_002_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_003_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_004_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_005_pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\005-pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_006_house" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\006-house.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_007_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\007-edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_008_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\008-error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_009_success" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\009-success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_010_star" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\010-star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_011_calendar_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\011-calendar-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_012_photo_camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\012-photo-camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_013_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\013-plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_014_like" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\014-like.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_015_clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\015-clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_016_idea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\016-idea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_017_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\017-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_018_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\018-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_019_smartphone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\019-smartphone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_020_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\020-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_021_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\021-picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <data name="btn_PeopleForm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
 </root>

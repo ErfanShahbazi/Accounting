@@ -16,5 +16,11 @@ namespace Accounting_App
         {
             InitializeComponent();
         }
+
+        private void btn_PeopleForm_Click(object sender, EventArgs e)
+        {
+            frm_People PeopleForm = new frm_People();
+            PeopleForm.ShowDialog();
+        }
     }
 }

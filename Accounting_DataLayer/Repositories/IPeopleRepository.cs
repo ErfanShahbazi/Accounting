@@ -10,10 +10,10 @@ namespace Accounting_DataLayer
     {
         List<Person> GetAllPeople();
         Person GetPersonById(int id);
+        List<Person> FindPersonBySearch(string parameter);
         bool AddPerson(Person person);
         bool EditPerson(Person person);
         bool DeletePerson(Person person);
         bool DeletePerson(int id);
-        void SaveChanges();
     }
 }

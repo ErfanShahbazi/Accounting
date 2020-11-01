@@ -8,12 +8,12 @@ using System.Data.Entity;
 
 namespace Accounting_DataLayer
 {
-    public class PeopleRespository : IPeopleRepository
+    public class PeopleRepository : IPeopleRepository
     {
 
         private AccountingEntities accountingDB;
 
-        public PeopleRespository(AccountingEntities db)
+        public PeopleRepository(AccountingEntities db)
         {
             accountingDB = db;
         }
@@ -35,6 +35,12 @@ namespace Accounting_DataLayer
                 throw;
             }
         }
+
+        public List<Person> FindPersonBySearch(string parameter)
+        {
+            return accountingDB.Person.Where(p => p.FullName.Contains(parameter) || p.Phone.Contains(parameter) || p.Email.Contains(parameter)).ToList();
+        }
+
 
         public bool AddPerson(Person person)
         {
@@ -82,7 +88,7 @@ namespace Accounting_DataLayer
         {
             try
             {
-                Person personToDelete = accountingDB.Person.Where(p=> p.ID == id).SingleOrDefault();
+                Person personToDelete = GetPersonById(id);
                 accountingDB.Person.Remove(personToDelete);
                 return true;
             }
@@ -93,9 +99,7 @@ namespace Accounting_DataLayer
             }
         }
 
-        public void SaveChanges()
-        {
-            accountingDB.SaveChanges();
-        }
+        
+       
     }
 }

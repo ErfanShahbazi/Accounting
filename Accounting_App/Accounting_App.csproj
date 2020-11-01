@@ -33,6 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,8 +60,59 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_People.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_People.Designer.cs">
+      <DependentUpon>frm_People.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PeopleInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PeopleInput.Designer.cs">
+      <DependentUpon>frm_PeopleInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validator\BaseValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validator\BaseValidator.designer.cs">
+      <DependentUpon>BaseValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validator\CustomValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validator\CustomValidator.designer.cs">
+      <DependentUpon>CustomValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validator\RangeValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validator\RangeValidator.designer.cs">
+      <DependentUpon>RangeValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validator\RegularExpressionValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validator\RegularExpressionValidator.designer.cs">
+      <DependentUpon>RegularExpressionValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validator\RequiredFieldValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validator\RequiredFieldValidator.designer.cs">
+      <DependentUpon>RequiredFieldValidator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_People.resx">
+      <DependentUpon>frm_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PeopleInput.resx">
+      <DependentUpon>frm_PeopleInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +135,250 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-good-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-vote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-rate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-smartwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-validation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-bad-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-vote-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-handshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016-rating-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-checking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018-rating-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-bad-review-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-like-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\021-rating-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022-dislike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\023-validation-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\024-website.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\025-rating-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\026-phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\027-like-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028-email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\029-validation-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030-rating-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\031-rating-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\032-like-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\033-ranking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\034-rating-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\035-rating-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\036-computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\037-rating-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\038-email-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\039-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\040-rating-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\041-like-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\042-medal-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\043-validation-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\044-rating-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\045-validation-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\046-laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\047-vote-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\048-rating-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\049-trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-calendar-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-photo-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016-idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\021-picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting_DataLayer\Accounting_DataLayer.csproj">
+      <Project>{5294f686-7078-4cf3-b92d-e83abd69da58}</Project>
+      <Name>Accounting_DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
